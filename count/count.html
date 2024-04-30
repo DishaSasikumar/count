@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+    <div id="shape">
+        <div id="rectangle"></div>
+    </div>
+    <div class="cnt"><p id="count">Count=0</p></div>
+    <button id="press" onclick="add()">Click</button>
+    <button id="reset" onclick="reset()">Reset</button>
+    <button id="red" onclick="changeRed()">Red</button>
+    <button id="blue" onclick="changeBlue()">Blue</button>
+</div>
+</body>
+<script>
+function add(){
+    let shape=document.getElementById("shape");
+    let press=document.getElementById("press");
+    let count=document.getElementById("count");
+       press.addEventListener('click',function(){
+        count.value+=1;
+        
+        if(count%2==0){
+                shape.innerHTML="<div id="square"></div>";
+            }
+            else if(count%5==0){
+                shape.innerHTML="<div id="circle"></div>";
+            }
+            
+            else{
+                shape.innerHTML="<div id="rectangle"></div>";
+            }
+       });
+            
+        }
+    function reset(){
+            document.getElementById("count").value = '';
+    }
+    function changeRed(){
+            shape.style.backgroundColor="Red";
+    }
+    function changeBlue(){
+            shape.style.backgroundColor="Blue";
+    }
+</script>
+</html>
+
+

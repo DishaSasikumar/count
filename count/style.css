@@ -1,0 +1,36 @@
+button{
+    padding: 15px;
+    width: 100px;
+    border-radius: 15px;
+    margin-left: 15px;
+}
+.main{
+    margin: auto;
+    padding: 250px;
+}
+.cnt{
+    text-align: center;
+}
+#count{
+    font-size: 20px;
+    margin-right: 120px;
+}
+#square{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    margin-left: 200px;
+}
+#rectangle{
+    height: 100px;
+    width: 300px;
+    background-color: black;
+    margin-left: 110px;
+}
+#circle{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: black;
+    margin-left: 200px;
+}
